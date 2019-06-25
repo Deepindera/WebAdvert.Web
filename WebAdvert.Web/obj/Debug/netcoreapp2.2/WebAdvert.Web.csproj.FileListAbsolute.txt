@@ -2,6 +2,9 @@ C:\Users\Deepindera.Dhanda\Documents\WebAdvert.Web\WebAdvert.Web\bin\Debug\netco
 C:\Users\Deepindera.Dhanda\Documents\WebAdvert.Web\WebAdvert.Web\bin\Debug\netcoreapp2.2\WebAdvert.Web.runtimeconfig.json
 C:\Users\Deepindera.Dhanda\Documents\WebAdvert.Web\WebAdvert.Web\bin\Debug\netcoreapp2.2\WebAdvert.Web.runtimeconfig.dev.json
 C:\Users\Deepindera.Dhanda\Documents\WebAdvert.Web\WebAdvert.Web\bin\Debug\netcoreapp2.2\WebAdvert.Web.dll
+C:\Users\Deepindera.Dhanda\Documents\WebAdvert.Web\WebAdvert.Web\bin\Debug\netcoreapp2.2\WebAdvert.Web.pdb
+C:\Users\Deepindera.Dhanda\Documents\WebAdvert.Web\WebAdvert.Web\bin\Debug\netcoreapp2.2\WebAdvert.Web.Views.dll
+C:\Users\Deepindera.Dhanda\Documents\WebAdvert.Web\WebAdvert.Web\bin\Debug\netcoreapp2.2\WebAdvert.Web.Views.pdb
 C:\Users\Deepindera.Dhanda\Documents\WebAdvert.Web\WebAdvert.Web\obj\Debug\netcoreapp2.2\WebAdvert.Web.csprojAssemblyReference.cache
 C:\Users\Deepindera.Dhanda\Documents\WebAdvert.Web\WebAdvert.Web\obj\Debug\netcoreapp2.2\WebAdvert.Web.csproj.CoreCompileInputs.cache
 C:\Users\Deepindera.Dhanda\Documents\WebAdvert.Web\WebAdvert.Web\obj\Debug\netcoreapp2.2\WebAdvert.Web.RazorAssemblyInfo.cache
@@ -11,6 +14,8 @@ C:\Users\Deepindera.Dhanda\Documents\WebAdvert.Web\WebAdvert.Web\obj\Debug\netco
 C:\Users\Deepindera.Dhanda\Documents\WebAdvert.Web\WebAdvert.Web\obj\Debug\netcoreapp2.2\WebAdvert.Web.TagHelpers.input.cache
 C:\Users\Deepindera.Dhanda\Documents\WebAdvert.Web\WebAdvert.Web\obj\Debug\netcoreapp2.2\WebAdvert.Web.TagHelpers.output.cache
 C:\Users\Deepindera.Dhanda\Documents\WebAdvert.Web\WebAdvert.Web\obj\Debug\netcoreapp2.2\WebAdvert.Web.RazorCoreGenerate.cache
+C:\Users\Deepindera.Dhanda\Documents\WebAdvert.Web\WebAdvert.Web\obj\Debug\netcoreapp2.2\Razor\Views\Accounts\Confirm.g.cshtml.cs
+C:\Users\Deepindera.Dhanda\Documents\WebAdvert.Web\WebAdvert.Web\obj\Debug\netcoreapp2.2\Razor\Views\Accounts\Signup.g.cshtml.cs
 C:\Users\Deepindera.Dhanda\Documents\WebAdvert.Web\WebAdvert.Web\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
 C:\Users\Deepindera.Dhanda\Documents\WebAdvert.Web\WebAdvert.Web\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
 C:\Users\Deepindera.Dhanda\Documents\WebAdvert.Web\WebAdvert.Web\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
@@ -21,12 +26,8 @@ C:\Users\Deepindera.Dhanda\Documents\WebAdvert.Web\WebAdvert.Web\obj\Debug\netco
 C:\Users\Deepindera.Dhanda\Documents\WebAdvert.Web\WebAdvert.Web\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
 C:\Users\Deepindera.Dhanda\Documents\WebAdvert.Web\WebAdvert.Web\obj\Debug\netcoreapp2.2\WebAdvert.Web.RazorTargetAssemblyInfo.cache
 C:\Users\Deepindera.Dhanda\Documents\WebAdvert.Web\WebAdvert.Web\obj\Debug\netcoreapp2.2\WebAdvert.Web.RazorTargetAssemblyInfo.cs
-C:\Users\Deepindera.Dhanda\Documents\WebAdvert.Web\WebAdvert.Web\bin\Debug\netcoreapp2.2\WebAdvert.Web.pdb
-C:\Users\Deepindera.Dhanda\Documents\WebAdvert.Web\WebAdvert.Web\bin\Debug\netcoreapp2.2\WebAdvert.Web.Views.dll
-C:\Users\Deepindera.Dhanda\Documents\WebAdvert.Web\WebAdvert.Web\bin\Debug\netcoreapp2.2\WebAdvert.Web.Views.pdb
 C:\Users\Deepindera.Dhanda\Documents\WebAdvert.Web\WebAdvert.Web\obj\Debug\netcoreapp2.2\WebAdvert.Web.Views.pdb
 C:\Users\Deepindera.Dhanda\Documents\WebAdvert.Web\WebAdvert.Web\obj\Debug\netcoreapp2.2\WebAdvert.Web.dll
 C:\Users\Deepindera.Dhanda\Documents\WebAdvert.Web\WebAdvert.Web\obj\Debug\netcoreapp2.2\WebAdvert.Web.pdb
 C:\Users\Deepindera.Dhanda\Documents\WebAdvert.Web\WebAdvert.Web\obj\Debug\netcoreapp2.2\WebAdvert.Web.csproj.CopyComplete
-C:\Users\Deepindera.Dhanda\Documents\WebAdvert.Web\WebAdvert.Web\obj\Debug\netcoreapp2.2\Razor\Views\Accounts\Signup.g.cshtml.cs
-C:\Users\Deepindera.Dhanda\Documents\WebAdvert.Web\WebAdvert.Web\obj\Debug\netcoreapp2.2\Razor\Views\Accounts\Confirm.g.cshtml.cs
+C:\Users\Deepindera.Dhanda\Documents\WebAdvert.Web\WebAdvert.Web\obj\Debug\netcoreapp2.2\Razor\Views\Accounts\Login.g.cshtml.cs

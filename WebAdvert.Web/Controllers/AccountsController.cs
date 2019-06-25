@@ -15,6 +15,7 @@ namespace WebAdvert.Web.Controllers
         private readonly SignInManager<CognitoUser> _signInManager;
         private readonly UserManager<CognitoUser> _userManager;
         private readonly CognitoUserPool _pool;
+
         public AccountsController(SignInManager<CognitoUser> signInManager, UserManager<CognitoUser> userManager, CognitoUserPool pool)
         {
             _signInManager = signInManager;
@@ -25,6 +26,35 @@ namespace WebAdvert.Web.Controllers
         public async Task<IActionResult> Signup()
         {
             var model = new SignUpModel();
+            return View(model);
+        }
+
+        public async Task<IActionResult> Login()
+        {
+            var model = new LoginModel();
+            return View(model);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Login(LoginModel model)
+        {
+            if (ModelState.IsValid)
+            {
+
+                var result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, false);
+                if (result.Succeeded)
+                {
+                    return RedirectToAction("Index", "Home");
+                }
+                else
+                {
+
+                    ModelState.AddModelError("Invalid Login", "We cannot login with that username and password");
+
+                }
+
+            }
+
             return View(model);
         }
 
@@ -42,12 +72,19 @@ namespace WebAdvert.Web.Controllers
                 }
                 else
                 {
-                    user.Attributes.Add(CognitoAttribute.Name.ToString(), model.Email);
+                    user.Attributes.Add("name", model.Email);
                     var createdUser = await _userManager.CreateAsync(user, model.Password);
 
                     if (createdUser.Succeeded)
                     {
-                        RedirectToAction("Confirm");
+                        return RedirectToAction("Confirm");
+                    }
+                    else
+                    {
+                        foreach (var error in createdUser.Errors)
+                        {
+                            ModelState.AddModelError(error.Code, error.Description);
+                        }
                     }
                 }
             }
@@ -68,26 +105,30 @@ namespace WebAdvert.Web.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = await _userManager.FindByEmailAsync(model.Email);
+                var user = await _userManager.FindByEmailAsync(model.Email).ConfigureAwait(false);
 
-                if(user.Status == null)
+                if (user == null || user.Status == null)
                 {
                     ModelState.AddModelError("UserNotExists", "Invalid Confirmation");
                 }
-
-                var result = await _userManager.ConfirmEmailAsync(user,model.Code);
-
-                if(result.Succeeded)
-                {
-                    return RedirectToAction("Index", "Home");
-                }
                 else
                 {
-                    foreach(var error in result.Errors)
+
+                    var confirmResult = await (_userManager as CognitoUserManager<CognitoUser>).ConfirmSignUpAsync(user, model.Code, true).ConfigureAwait(false);
+
+                    if (confirmResult.Succeeded)
                     {
-                        ModelState.AddModelError(error.Code, error.Description);
+                        return RedirectToAction("Index", "Home");
+                    }
+                    else
+                    {
+                        foreach (var error in confirmResult.Errors)
+                        {
+                            ModelState.AddModelError(error.Code, error.Description);
+                        }
                     }
                 }
+
             }
 
             return View(model);

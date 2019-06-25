@@ -1,10 +1,8 @@
 ﻿@model WebAdvert.Web.Models.Accounts.SignUpModel
 
-
-
-
 <h4>SignUp</h4>
 <hr />
+@Html.ValidationSummary(false, "", new { @class = "text-danger" })
 <div class="row">
     <div class="display-5">
         <form asp-action="Signup" asp-controller="AccountsController">
@@ -31,9 +29,6 @@
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
