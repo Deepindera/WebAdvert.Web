@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Deepindera.Dhanda\\Documents\\WebAdvert.Web\\WebAdvert.Web\\WebAdvert.Web.csproj": {}
+    "C:\\Users\\Dee\\Documents\\WebAdvert.Web\\WebAdvert.Web\\WebAdvert.Web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Deepindera.Dhanda\\Documents\\WebAdvert.Web\\WebAdvert.Web\\WebAdvert.Web.csproj": {
+    "C:\\Users\\Dee\\Documents\\WebAdvert.Web\\WebAdvert.Web\\WebAdvert.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Deepindera.Dhanda\\Documents\\WebAdvert.Web\\WebAdvert.Web\\WebAdvert.Web.csproj",
+        "projectUniqueName": "C:\\Users\\Dee\\Documents\\WebAdvert.Web\\WebAdvert.Web\\WebAdvert.Web.csproj",
         "projectName": "WebAdvert.Web",
-        "projectPath": "C:\\Users\\Deepindera.Dhanda\\Documents\\WebAdvert.Web\\WebAdvert.Web\\WebAdvert.Web.csproj",
-        "packagesPath": "C:\\Users\\Deepindera.Dhanda\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Deepindera.Dhanda\\Documents\\WebAdvert.Web\\WebAdvert.Web\\obj\\",
+        "projectPath": "C:\\Users\\Dee\\Documents\\WebAdvert.Web\\WebAdvert.Web\\WebAdvert.Web.csproj",
+        "packagesPath": "C:\\Users\\Dee\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dee\\Documents\\WebAdvert.Web\\WebAdvert.Web\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Deepindera.Dhanda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dee\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -41,6 +41,10 @@
       "frameworks": {
         "netcoreapp2.2": {
           "dependencies": {
+            "AWSSDK.S3": {
+              "target": "Package",
+              "version": "[3.3.104.10, )"
+            },
             "Amazon.AspNetCore.Identity.Cognito": {
               "target": "Package",
               "version": "[1.0.0, )"
