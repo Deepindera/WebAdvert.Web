@@ -20,13 +20,13 @@ namespace WebAdvert.Web.Controllers
             _pool = pool;
 
         }
-        public async Task<IActionResult> Signup()
+        public  IActionResult Signup()
         {
             var model = new SignUpModel();
             return View(model);
         }
 
-        public async Task<IActionResult> Login()
+        public IActionResult Login()
         {
             var model = new LoginModel();
             return View(model);

@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "e77a0982835c09a44bf59ae6c3f2ab5246559bf4"
+    "signature": "7ad097632682ee1a9394a20f0b52d2888d8e8f3c"
   },
   "compilationOptions": {
     "defines": [
@@ -27,8 +27,11 @@
           "AWSSDK.S3": "3.3.104.10",
           "Amazon.AspNetCore.Identity.Cognito": "1.0.0",
           "Amazon.Extensions.CognitoAuthentication": "1.0.3",
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "7.0.0",
+          "Deepindera_AdvertApi.Models": "1.0.1",
           "Microsoft.AspNetCore.App": "2.2.0",
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
+          "Microsoft.Extensions.Http": "2.2.0",
           "Microsoft.NETCore.App": "2.2.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.2.3"
         },
@@ -72,6 +75,36 @@
         },
         "compile": {
           "lib/netstandard2.0/Amazon.Extensions.CognitoAuthentication.dll": {}
+        }
+      },
+      "AutoMapper/9.0.0": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.5.0",
+          "System.Reflection.Emit": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AutoMapper.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/AutoMapper.dll": {}
+        }
+      },
+      "AutoMapper.Extensions.Microsoft.DependencyInjection/7.0.0": {
+        "dependencies": {
+          "AutoMapper": "9.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "7.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
       "AWSSDK.CognitoIdentity/3.3.100": {
@@ -157,6 +190,17 @@
         },
         "compile": {
           "lib/netstandard2.0/AWSSDK.SecurityToken.dll": {}
+        }
+      },
+      "Deepindera_AdvertApi.Models/1.0.1": {
+        "runtime": {
+          "lib/netcoreapp2.2/AdvertApi.Models.dll": {
+            "assemblyVersion": "1.0.1.0",
+            "fileVersion": "1.0.1.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp2.2/AdvertApi.Models.dll": {}
         }
       },
       "Microsoft.CodeAnalysis.CSharp.Workspaces/2.8.0": {
@@ -3718,6 +3762,20 @@
       "path": "amazon.extensions.cognitoauthentication/1.0.3",
       "hashPath": "amazon.extensions.cognitoauthentication.1.0.3.nupkg.sha512"
     },
+    "AutoMapper/9.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xCqvoxT4HIrNY/xlXG9W+BA/awdrhWvMTKTK/igkGSRbhOhpl3Q8O8Gxlhzjc9JsYqE7sS6AxgyuUUvZ6R5/Bw==",
+      "path": "automapper/9.0.0",
+      "hashPath": "automapper.9.0.0.nupkg.sha512"
+    },
+    "AutoMapper.Extensions.Microsoft.DependencyInjection/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-szI4yeRIM7GWe9JyekW0dKYehPB0t6M+I55fPeCebN6PhS7zQZa0eG3bgOnOx+eP3caSNoE7KEJs2rk7MLsh8w==",
+      "path": "automapper.extensions.microsoft.dependencyinjection/7.0.0",
+      "hashPath": "automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512"
+    },
     "AWSSDK.CognitoIdentity/3.3.100": {
       "type": "package",
       "serviceable": true,
@@ -3759,6 +3817,13 @@
       "sha512": "sha512-vyAwIXIbwdEOAQj+0r6TNPWK3h94QEHrCKyD/U7knzvlHWiS7RWXQdLJShz1/DQkCJgarjFEd+Mx+nVaHfiPtw==",
       "path": "awssdk.securitytoken/3.3.100",
       "hashPath": "awssdk.securitytoken.3.3.100.nupkg.sha512"
+    },
+    "Deepindera_AdvertApi.Models/1.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FOkl9gGfq5CZZPRngGJqOl7J8uc9ju1TfJnxXF0uk2snvtiID6x2AZWFgklozb2hyTAwraAadpq9B9rY7vweWw==",
+      "path": "deepindera_advertapi.models/1.0.1",
+      "hashPath": "deepindera_advertapi.models.1.0.1.nupkg.sha512"
     },
     "Microsoft.CodeAnalysis.CSharp.Workspaces/2.8.0": {
       "type": "package",

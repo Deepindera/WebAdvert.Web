@@ -33,6 +33,32 @@
           "lib/netstandard2.0/Amazon.Extensions.CognitoAuthentication.dll": {}
         }
       },
+      "AutoMapper/9.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.5.0",
+          "System.Reflection.Emit": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/AutoMapper.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AutoMapper.dll": {}
+        }
+      },
+      "AutoMapper.Extensions.Microsoft.DependencyInjection/7.0.0": {
+        "type": "package",
+        "dependencies": {
+          "AutoMapper": "9.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
+        }
+      },
       "AWSSDK.CognitoIdentity/3.3.100": {
         "type": "package",
         "dependencies": {
@@ -104,6 +130,15 @@
         },
         "runtime": {
           "lib/netstandard2.0/AWSSDK.SecurityToken.dll": {}
+        }
+      },
+      "Deepindera_AdvertApi.Models/1.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp2.2/AdvertApi.Models.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.2/AdvertApi.Models.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -4854,6 +4889,36 @@
         "lib/netstandard2.0/Amazon.Extensions.CognitoAuthentication.dll"
       ]
     },
+    "AutoMapper/9.0.0": {
+      "sha512": "xCqvoxT4HIrNY/xlXG9W+BA/awdrhWvMTKTK/igkGSRbhOhpl3Q8O8Gxlhzjc9JsYqE7sS6AxgyuUUvZ6R5/Bw==",
+      "type": "package",
+      "path": "automapper/9.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "automapper.9.0.0.nupkg.sha512",
+        "automapper.nuspec",
+        "lib/net461/AutoMapper.dll",
+        "lib/net461/AutoMapper.pdb",
+        "lib/net461/AutoMapper.xml",
+        "lib/netstandard2.0/AutoMapper.dll",
+        "lib/netstandard2.0/AutoMapper.pdb",
+        "lib/netstandard2.0/AutoMapper.xml"
+      ]
+    },
+    "AutoMapper.Extensions.Microsoft.DependencyInjection/7.0.0": {
+      "sha512": "szI4yeRIM7GWe9JyekW0dKYehPB0t6M+I55fPeCebN6PhS7zQZa0eG3bgOnOx+eP3caSNoE7KEJs2rk7MLsh8w==",
+      "type": "package",
+      "path": "automapper.extensions.microsoft.dependencyinjection/7.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",
+        "automapper.extensions.microsoft.dependencyinjection.nuspec",
+        "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll",
+        "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.pdb"
+      ]
+    },
     "AWSSDK.CognitoIdentity/3.3.100": {
       "sha512": "aslQOstHa5x1MgTl+Y6QkZLBrMo9yJI3vI3t6Bzcq6dkFJh4vWkoUAb6RY3Xsaaa0EfO14m8kVZwymUb8Jvomg==",
       "type": "package",
@@ -5076,6 +5141,18 @@
         "lib/uap/AWSSDK.SecurityToken.pdb",
         "tools/install.ps1",
         "tools/uninstall.ps1"
+      ]
+    },
+    "Deepindera_AdvertApi.Models/1.0.1": {
+      "sha512": "FOkl9gGfq5CZZPRngGJqOl7J8uc9ju1TfJnxXF0uk2snvtiID6x2AZWFgklozb2hyTAwraAadpq9B9rY7vweWw==",
+      "type": "package",
+      "path": "deepindera_advertapi.models/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "deepindera_advertapi.models.1.0.1.nupkg.sha512",
+        "deepindera_advertapi.models.nuspec",
+        "lib/netcoreapp2.2/AdvertApi.Models.dll"
       ]
     },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -13284,8 +13361,11 @@
       "AWSSDK.S3 >= 3.3.104.10",
       "Amazon.AspNetCore.Identity.Cognito >= 1.0.0",
       "Amazon.Extensions.CognitoAuthentication >= 1.0.3",
+      "AutoMapper.Extensions.Microsoft.DependencyInjection >= 7.0.0",
+      "Deepindera_AdvertApi.Models >= 1.0.1",
       "Microsoft.AspNetCore.App >= 2.2.0",
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
+      "Microsoft.Extensions.Http >= 2.2.0",
       "Microsoft.NETCore.App >= 2.2.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.2.3"
     ]
@@ -13343,6 +13423,14 @@
             "target": "Package",
             "version": "[1.0.3, )"
           },
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+            "target": "Package",
+            "version": "[7.0.0, )"
+          },
+          "Deepindera_AdvertApi.Models": {
+            "target": "Package",
+            "version": "[1.0.1, )"
+          },
           "Microsoft.AspNetCore.App": {
             "suppressParent": "All",
             "target": "Package",
@@ -13351,6 +13439,10 @@
           },
           "Microsoft.AspNetCore.Razor.Design": {
             "suppressParent": "All",
+            "target": "Package",
+            "version": "[2.2.0, )"
+          },
+          "Microsoft.Extensions.Http": {
             "target": "Package",
             "version": "[2.2.0, )"
           },
