@@ -12,6 +12,7 @@ namespace WebAdvert.Web.Models
             CreateMap<AdvertModel, CreateAdvertModel>().ReverseMap();
             CreateMap<CreateAdvertResponse, AdvertResponse>().ReverseMap();
             CreateMap<ConfirmAdvertModel,ConfirmAdvertModelRequest>().ReverseMap();
+            CreateMap<CreateAdvertViewModel,CreateAdvertModel>().ReverseMap();
         }
     }
 }

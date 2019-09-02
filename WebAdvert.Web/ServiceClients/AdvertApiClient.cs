@@ -27,7 +27,7 @@ namespace WebAdvert.Web.ServiceClients
             _httpClient.DefaultRequestHeaders.Add("Content-type", "application/json");
         }
 
-        public async Task<AdvertResponse> Create(CreateAdvertModel model)
+        public async Task<AdvertResponse> CreateAsync(CreateAdvertModel model)
         {
             var advertModel = _mapper.Map<AdvertModel>(model);
             var jsonModel = JsonConvert.SerializeObject(advertModel);
@@ -39,7 +39,7 @@ namespace WebAdvert.Web.ServiceClients
             return advertResponse;
         }
 
-        public async Task<bool> Confirm(ConfirmAdvertModelRequest model)
+        public async Task<bool> ConfirmAsync(ConfirmAdvertModelRequest model)
         {
             var confirmAdvertModel = _mapper.Map<ConfirmAdvertModel>(model);
             var jsonModel = JsonConvert.SerializeObject(confirmAdvertModel);

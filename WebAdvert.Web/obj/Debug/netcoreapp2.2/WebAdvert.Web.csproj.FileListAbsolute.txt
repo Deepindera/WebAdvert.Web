@@ -64,3 +64,4 @@ C:\Users\Dee\Documents\WebAdvert.Web\WebAdvert.Web\obj\Debug\netcoreapp2.2\WebAd
 C:\Users\Dee\Documents\WebAdvert.Web\WebAdvert.Web\obj\Debug\netcoreapp2.2\WebAdvert.Web.pdb
 C:\Users\Dee\Documents\WebAdvert.Web\WebAdvert.Web\obj\Debug\netcoreapp2.2\WebAdvert.Web.csproj.CopyComplete
 C:\Users\Dee\Documents\WebAdvert.Web\WebAdvert.Web\obj\Debug\netcoreapp2.2\Razor\Views\AdvertManagement\Create.g.cshtml.cs
+C:\Users\Dee\Documents\WebAdvert.Web\WebAdvert.Web\obj\Debug\netcoreapp2.2\WebAdvert.Web.csprojAssemblyReference.cache

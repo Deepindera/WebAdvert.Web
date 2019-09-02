@@ -90,7 +90,7 @@ namespace WebAdvert.Web.Controllers
         }
 
 
-        public async Task<IActionResult> Confirm()
+        public  IActionResult Confirm()
         {
             var model = new ConfirmModel();
             return View(model);

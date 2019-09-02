@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "7ad097632682ee1a9394a20f0b52d2888d8e8f3c"
+    "signature": "b94ce336647c97ca1e54ff6a1a23002b64278781"
   },
   "compilationOptions": {
     "defines": [
@@ -32,6 +32,7 @@
           "Microsoft.AspNetCore.App": "2.2.0",
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
           "Microsoft.Extensions.Http": "2.2.0",
+          "Microsoft.Extensions.Http.Polly": "2.2.0",
           "Microsoft.NETCore.App": "2.2.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.2.3"
         },
@@ -236,6 +237,22 @@
         },
         "compile": {
           "lib/netstandard1.3/Microsoft.CodeAnalysis.Workspaces.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Http.Polly/2.2.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Http": "2.2.0",
+          "Polly": "6.0.1",
+          "Polly.Extensions.Http": "2.0.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Http.Polly.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18316"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Http.Polly.dll": {}
         }
       },
       "Microsoft.IdentityModel.JsonWebTokens/5.4.0": {
@@ -636,6 +653,31 @@
         },
         "compile": {
           "lib/netstandard1.6/NuGet.Frameworks.dll": {}
+        }
+      },
+      "Polly/6.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/Polly.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.1.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Polly.dll": {}
+        }
+      },
+      "Polly.Extensions.Http/2.0.1": {
+        "dependencies": {
+          "Polly": "6.0.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Polly.Extensions.Http.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.1.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Polly.Extensions.Http.dll": {}
         }
       },
       "System.Collections.NonGeneric/4.3.0": {
@@ -3839,6 +3881,13 @@
       "path": "microsoft.codeanalysis.workspaces.common/2.8.0",
       "hashPath": "microsoft.codeanalysis.workspaces.common.2.8.0.nupkg.sha512"
     },
+    "Microsoft.Extensions.Http.Polly/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HIk+xQ0wQHPHaOGa/mm1NMx4aDO5IosO/C7SVmbwFb/XQgRHnGOnA8xNcUqzwerWHhw0vVzuIRJuLrKlipDsyA==",
+      "path": "microsoft.extensions.http.polly/2.2.0",
+      "hashPath": "microsoft.extensions.http.polly.2.2.0.nupkg.sha512"
+    },
     "Microsoft.IdentityModel.JsonWebTokens/5.4.0": {
       "type": "package",
       "serviceable": true,
@@ -3985,6 +4034,20 @@
       "sha512": "sha512-qbXaB76XYUVLocLBs8Z9TS/ERGK2wm797feO+0JEPFvT7o7MRadOR77mqaSD4J1k8G+DlZQyq+MlkCuxrkr3ag==",
       "path": "nuget.frameworks/4.7.0",
       "hashPath": "nuget.frameworks.4.7.0.nupkg.sha512"
+    },
+    "Polly/6.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-nwL8qNLkrphkehUftQqJZOExH6sJ+PPWhkrksqoouAvy9TuEgYUjFujlUVC8PyYLIWIneR9R4opcFpPKn1HQ1A==",
+      "path": "polly/6.0.1",
+      "hashPath": "polly.6.0.1.nupkg.sha512"
+    },
+    "Polly.Extensions.Http/2.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9NPDm98bmtlzLHnMDJ4YHno88yZmBOzvks34coP73/1GJzabSUi217xISa4z+b7YO5TncZMQVM4O5ThlZwg8mQ==",
+      "path": "polly.extensions.http/2.0.1",
+      "hashPath": "polly.extensions.http.2.0.1.nupkg.sha512"
     },
     "System.Collections.NonGeneric/4.3.0": {
       "type": "package",
